@@ -44,6 +44,7 @@ package_fulgur-base() {
     install -Dm 0644 dialogrc "${pkgdir}/etc/dialogrc"
     install -Dm 0755 mirupgr.pachook "${pkgdir}/etc/pacman.d/hooks/mirror-upgrade.hook"
     install -Dm 0644 pacman.conf "${pkgdir}/etc/pacman.conf"
+    install -Dm 0600 sudoers "${pkgdir}/etc/sudoers"
 }
 
 post_install() {
